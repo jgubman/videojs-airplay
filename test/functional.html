@@ -1,0 +1,20 @@
+<html lang="en">
+  <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/5.0.0/video-js.min.css" rel="stylesheet">
+    <link href="../dist/videojs.airplay.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/5.0.0/video.min.js"></script>
+    <script src="../dist/videojs.airplay.js" type="text/javascript"></script>
+  </head>
+  <body>
+      <video id="example-video" width="640" height="265" class="video-js vjs-default-skin" controls>
+        <source src="//vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+      </video>
+
+    <script>
+        var player = videojs('example-video', {
+          plugins: { airplayButton: {} }
+        }).ready(function() {
+          this.play();
+        });
+    </script>
+  </body>

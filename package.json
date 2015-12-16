@@ -1,0 +1,38 @@
+{
+  "name": "videojs-airplay",
+  "version": "0.1.0",
+  "description": "Adds an airplay button to a control bar if the browser supports airplay",
+  "scripts": {
+    "build": "npm run clean; npm run sass; npm run build-dist; cp -r fonts dist/",
+    "sass": "mkdir -p dist/ && ./node_modules/.bin/node-sass --output-style compact ./src/videojs-airplay.scss dist/videojs.airplay.css",
+    "build-dist": "mkdir -p dist/ && ./node_modules/.bin/browserify ./src/videojs-airplay.js -o dist/videojs.airplay.js",
+    "clean": "rm -rf dist/"
+  },
+  "keywords": [
+    "videojs",
+    "plugin",
+    "airplay"
+  ],
+  "author": "Jon Gubman",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jgubman/videojs-airplay"
+  },
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.1.0",
+    "browserify-shim": "^3.8.10",
+    "node-sass": "^3.4.2",
+    "video.js": "^5.2.1"
+  },
+  "browserify": {
+    "transform": [
+      "babelify",
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "video.js": "global:videojs"
+  }
+}
