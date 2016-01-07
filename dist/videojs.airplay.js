@@ -55,7 +55,6 @@ var AirplayButton = function AirplayButton(options) {
     videoEl.addEventListener('webkitplaybacktargetavailabilitychanged', function (event) {
       switch (event.availability) {
         case "available":
-          console.log("airplay available");
 
           player.on('loadeddata', function () {
             if (!player.controlBar.childNameIndex_.hasOwnProperty('AirplayToggle')) {
@@ -66,7 +65,6 @@ var AirplayButton = function AirplayButton(options) {
           break;
 
         case "not-available":
-          console.log("airplay not available");
           break;
       }
     });
