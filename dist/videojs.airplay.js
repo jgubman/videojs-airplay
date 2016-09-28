@@ -37,6 +37,7 @@ var AirplayToggle = (function (_Button) {
     key: 'handleClick',
     value: function handleClick() {
       this.player().el().getElementsByTagName('video')[0].webkitShowPlaybackTargetPicker();
+      this.player().trigger('airplayStart');
     }
   }]);
 
