@@ -13,7 +13,8 @@ class AirplayToggle extends Button {
   }
 
   handleClick() {
-    this.player().el().getElementsByTagName('video')[0].webkitShowPlaybackTargetPicker()
+    this.player().el().getElementsByTagName('video')[0].webkitShowPlaybackTargetPicker();
+    this.player().trigger('airplayStart');
   }
 
 }
