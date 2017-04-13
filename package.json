@@ -20,6 +20,7 @@
     "type": "git",
     "url": "https://github.com/jgubman/videojs-airplay"
   },
+  "main": "dist/videojs.airplay.js",
   "devDependencies": {
     "babelify": "^6.3.0",
     "browserify": "^11.1.0",
