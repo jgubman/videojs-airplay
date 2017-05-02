@@ -1,10 +1,12 @@
+$icon-font-path: 'fonts' !default;
+
 @font-face {
   font-family: 'videojs-airplayButton';
-  src:url('fonts/airplayButton.eot');
-  src:url('fonts/airplayButton.eot?#iefix') format('embedded-opentype'),
-    url('fonts/airplayButton.ttf') format('truetype'),
-    url('fonts/airplayButton.woff') format('woff'),
-    url('fonts/airplayButton.svg') format('svg');
+  src:url('#{$icon-font-path}/airplayButton.eot');
+  src:url('#{$icon-font-path}/airplayButton.eot?#iefix') format('embedded-opentype'),
+    url('#{$icon-font-path}/airplayButton.ttf') format('truetype'),
+    url('#{$icon-font-path}/airplayButton.woff') format('woff'),
+    url('#{$icon-font-path}/airplayButton.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
