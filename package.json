@@ -16,6 +16,7 @@
   ],
   "author": "Jon Gubman",
   "license": "Apache-2.0",
+  "main": "dist/videojs.airplay.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/jgubman/videojs-airplay"
@@ -30,12 +31,11 @@
     "global": "^4.3.2",
     "video.js": "^5.2.1"
   },
-  "main": "dist/videojs.airplay.js",
   "devDependencies": {
     "babelify": "^6.3.0",
     "browserify": "^11.1.0",
     "browserify-shim": "^3.8.10",
-    "node-sass": "^3.4.2",
+    "node-sass": "^3.4.2"
   },
   "browserify": {
     "transform": [
@@ -44,9 +44,6 @@
     ]
   },
   "browserify-shim": {
-    "video.js": "global:videojs"
-  }
-}
     "video.js": "global:videojs"
   }
 }
