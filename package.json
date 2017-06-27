@@ -1,6 +1,6 @@
 {
   "name": "videojs-airplay",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Adds an airplay button to a control bar if the browser supports airplay",
   "scripts": {
     "build": "npm run clean; npm run sass; npm run build-dist; cp -r fonts dist/",
