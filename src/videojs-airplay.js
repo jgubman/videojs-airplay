@@ -48,4 +48,4 @@ const AirplayButton = function(options) {
   };
 };
 
-videojs.plugin('airplayButton', AirplayButton);
+videojs.registerPlugin('airplayButton', AirplayButton);
