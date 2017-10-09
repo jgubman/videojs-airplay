@@ -2,4 +2,6 @@
 
 .vjs-airplay-control { font-family: 'videojs-airplayButton'; float: right; cursor: pointer; }
 
-.vjs-airplay-control:before { content: "\e900"; }
+.vjs-airplay-control:before, .vjs-v6 .vjs-airplay-control .vjs-icon-placeholder::before { content: "\e900"; }
+
+.vjs-v6 .vjs-airplay-control:before { content: none; }

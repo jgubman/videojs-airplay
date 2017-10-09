@@ -17,6 +17,11 @@ $icon-font-path: 'fonts' !default;
   cursor: pointer;
 }
 
-.vjs-airplay-control:before {
+.vjs-airplay-control:before,
+.vjs-v6 .vjs-airplay-control .vjs-icon-placeholder::before {
   content: "\e900";
+}
+
+.vjs-v6 .vjs-airplay-control:before {
+  content: none;
 }
