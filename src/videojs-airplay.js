@@ -1,6 +1,7 @@
 import videojs from 'video.js';
 const Component = videojs.getComponent('Component');
 const Button = videojs.getComponent('Button');
+const registerPlugin = videojs.registerPlugin || videojs.plugin;
 
 class AirplayToggle extends Button {
 
@@ -48,4 +49,4 @@ const AirplayButton = function(options) {
   };
 };
 
-videojs.registerPlugin('airplayButton', AirplayButton);
+registerPlugin('airplayButton', AirplayButton);
