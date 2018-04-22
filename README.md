@@ -4,6 +4,9 @@ Videojs Plugin that adds an airplay button to the control bar if the browser sup
 ## NOTES
 Built for video.js 5.0 and above.
 
+If you need a plugin that supports video.js 6.x, see
+[@silvermine/videojs-airplay](https://www.npmjs.com/package/@silvermine/videojs-airplay).
+
 ## Usage
 
 Include:
