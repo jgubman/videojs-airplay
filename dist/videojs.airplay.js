@@ -18,6 +18,7 @@ var _videoJs2 = _interopRequireDefault(_videoJs);
 
 var Component = _videoJs2['default'].getComponent('Component');
 var Button = _videoJs2['default'].getComponent('Button');
+var registerPlugin = _videoJs2['default'].registerPlugin || _videoJs2['default'].plugin;
 
 var AirplayToggle = (function (_Button) {
   _inherits(AirplayToggle, _Button);
@@ -72,7 +73,7 @@ var AirplayButton = function AirplayButton(options) {
   };
 };
 
-_videoJs2['default'].plugin('airplayButton', AirplayButton);
+registerPlugin('airplayButton', AirplayButton);
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}]},{},[1]);
