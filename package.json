@@ -35,7 +35,7 @@
     "babelify": "^6.3.0",
     "browserify": "^11.1.0",
     "browserify-shim": "^3.8.10",
-    "node-sass": "^3.4.2"
+    "node-sass": "^4.9.3"
   },
   "browserify": {
     "transform": [
